@@ -1,0 +1,7 @@
+applications:
+- name: We-Collab-Application
+  host: we-collab
+  instances: 1
+  memory: 600M
+  path: target/We-Collab-Application-0.0.1-SNAPSHOT.jar
+  health-check-type: process
