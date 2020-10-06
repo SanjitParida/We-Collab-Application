@@ -214,6 +214,12 @@ button.accent {
     font-weight: 600;
 }
 
+#chat-page .chat-message date {
+    color: #333;
+    font-weight: 600;
+    font-weight:normal; 
+}
+
 #chat-page .chat-message p {
     color: #43464b;
 }

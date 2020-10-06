@@ -86,10 +86,15 @@ function onMessageReceived(payload) {
 
         messageElement.appendChild(avatarElement);
 
-        var usernameElement = document.createElement('span');
-        var usernameText = document.createTextNode(message.sender + '  at: '+ new Date().toLocaleString());
+        let usernameElement = document.createElement('span');
+        let usernameText = document.createTextNode(message.sender+' ');
+        let dateElement = document.createElement('date');
+        let dateText = document.createTextNode( ' '+ new Date().toLocaleString());
         usernameElement.appendChild(usernameText);
+     //   dateElement.setAttribute('style', 'font-weight: normal');
+        dateElement.appendChild(dateText);
         messageElement.appendChild(usernameElement);
+        messageElement.appendChild(dateElement);
     }
 
     var textElement = document.createElement('p');
